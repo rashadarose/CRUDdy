@@ -56,7 +56,7 @@ export class HeroesComponent implements OnInit {
     //formData.append('id', id);
     formData.append('description', description);
     this.heroService.onSendService(formData).subscribe(res =>{
-        this.heroes.push(res as Hero[]);//no need to refresh page get this to work
+        //this.heroes.push(res as Hero[]);//no need to refresh page get this to work
         //console.log(res);
        
     },
