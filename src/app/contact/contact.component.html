@@ -1,0 +1,9 @@
+<h1>$ Converter</h1>
+<input type="number" placeholder="amount" [(ngModel)]="amount">
+
+<label>From:</label> <span>{{from}}</span>
+<label>To:</label> <span>{{to}}</span>
+<br>
+
+<b>{{amount.toFixed(2)}} {{to}} = {{convert().toFixed(2)}} {{from}}</b>
+

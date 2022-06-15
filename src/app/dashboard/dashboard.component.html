@@ -1,0 +1,65 @@
+<!--<h2>Top Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes" >
+    {{hero.id}}  {{hero.name}}
+  </a>
+</div>-->
+
+<div class="container">
+  <h1>Table</h1>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroes">
+        <td>{{ hero.id }}</td>
+        <td>{{ hero.name }}</td>
+        <td>{{ hero.Description }}</td>
+       
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--<table>
+  <tr>
+    <th>ID</th>
+    <th>Hero</th>
+ 
+  </tr>
+  <tr *ngFor="let mydataSource of dataSource[0]">
+
+   <td>{{mydataSource.id}}</td>
+    <td>{{mydataSource.name}}</td>
+  
+  </tr>
+  </table>-->
+
+<!--<app-hero-search></app-hero-search>-->
+
+<!--<div class="container">
+	<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>-->

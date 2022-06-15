@@ -1,0 +1,29 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .SuperTron{
+
+    background-image: url(../assets/images/Location-Newark.png) repeat 0 0;
+   
+  }
+
+  #sect1{  
+    height: 650px;  
+    color: #fff;
+    background-image: url('../assets/images/Location-Newark.png');  
+    background-size: 100%;  
+    background-size: cover;  
+}   
